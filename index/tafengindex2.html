@@ -1,71 +1,30 @@
 <html>
-   <head>
-      <meta charset="UTF-8">
-     
+<head>
 
-      <title>大豐旅行社</title>   	
-      <meta name="description" content="大豐旅行社 國內外旅遊專家">
-      <meta name="keywords" content="大豐旅行社,國內旅遊,國外自由行," />   
-      <meta http-equiv="cache-control" content="no-cache">  
-      <meta http-equiv="pragma" content="no-cache">
-      <meta http-equiv="expires" content="0">
+<script>
 
-   </head>
+var useragent = navigator.userAgent;
+useragent = useragent.toLowerCase();
 
+if( useragent.indexOf('iphone') != -1 ) location.replace("https://kevin860320.github.io/tafeng66/index/tafengindex.html");//iphone
+else if( useragent.indexOf('ipad') != -1 || useragent.indexOf('ipod') != -1) location.replace("https://kevin860320.github.io/tafeng66/index/tafengindex.html");//ipad
+else if( useragent.indexOf('android') != -1 ) {
+if( ConsiderLimits() )
+{
+location.replace("https://kevin860320.github.io/tafeng66/index/tafengindex.html"); // android pad
+}else{
+location.replace("https://kevin860320.github.io/tafeng66/index/tafengindex.html"); // android phone
+}
+}else{
+location.replace("http://www.tafeng66.com.tw/webeip/HT00215/");// PC
+}
 
-<body  bgcolor="WHITE" >
-<p align=center>
+function ConsiderLimits(){
+if( screen.width >= 1024 && screen.height >= 600 )
+return 1;
+return 0;
+}
 
-
-<table style="border:0px #FF6600 solid " width=1200 height="100"  rules="none"  cellpadding="3" cellspacing="0"   >
-
-
-<tr>
-<th  bgcolor= #FF6600 align=left><font color= #FFFFFF><font size="3"><img src="back.png"  width="75" height="75"  ></font></th>
-<th  bgcolor= #FF6600 align=middle><font color= #FFFFFF><font size="3"><img src="tafenglogo2.png"  width="288" height="90"  ></font></th>
-<th  bgcolor= #FF6600 width="225 height="75" ><font color= #FFFFFF></th>
-<tr>
-</table>
-
-<table style="border:0px #FF6600 solid " width=1000 height="100"  rules="none"  cellpadding="3" cellspacing="0"   >
-<tr>
-<th  bgcolor= #FFFFFF align=center><font color= #000000><font size="3"><img src="line2.png"  width=564 height=350  ></font>
-<tr>
-</table>
-
-<table style="border:0px #FF6600 solid " width=1000 height="100"  rules="none"  cellpadding="3" cellspacing="0"   >
-
-<tr>
-<th  bgcolor= #FFFFFF align=center><font color= #000000><font size="3"><a href = domestic\tafeng_domestic.html><img src="1.jpg"  width=350 height=350></a></font><!--國內旅遊-->
-<th  bgcolor= #FFFFFF align=center><font color= #000000><font size="3"><a href = foreign\tafeng_foreign.html><img src="3.jpg"  width=350 height=350  ></a></font><!--國外旅遊-->
-<th  bgcolor= #FFFFFF align=center><font color= #000000><font size="3"><a href = foreign_self\tafeng_foreign_self.html><img src="4.jpg"  width=350 height=350  ></font><!--國外自由行-->
-</th>
-<tr>
-
-<tr>
-<th  bgcolor= #FFFFFF align=center><font color= #000000><font size="3"><a href = foreign_self\tafeng_foreign_self.html><img src="1.jpg"  width=350 height=350  ></font><!--世界郵輪-->
-<th  bgcolor= #FFFFFF align=center><font color= #000000><font size="3"><a href = foreign_self\tafeng_foreign_self.html><img src="3.jpg"  width=350 height=350  ></font><!--來台專區-->
-<th  bgcolor= #FFFFFF align=center><font color= #000000><font size="3"><a href = bus\tafeng_bus.html><img src="2.jpg"  width=350 height=350  ></font><!--遊覽車出租-->
-</th>
-<tr>
-
-<tr>
-<th  bgcolor= #FFFFFF align=center><font color= #000000><font size="3"><img src="1.jpg"  width=350 height=350  ></font>
-<th  bgcolor= #FFFFFF align=center><font color= #000000><font size="3"><img src="3.jpg"  width=350 height=350  ></font>
-<th  bgcolor= #FFFFFF align=center><font color= #000000><font size="3"><img src="2.jpg"  width=350 height=350  ></font>
-<tr>
-</table>
-
-
-<table style="border:0px #FF6600 solid " width=1000 height="100"  rules="none"  cellpadding="3" cellspacing="0"   >
-
-<tr>
-<th  bgcolor= #FFFFFF align=center><font color= "blue"><font size="6"><a href = http://www.tafeng66.com.tw/webeip/HT00215/>電腦版網頁</a></font>
-</th>
-<tr>
-</table>
-
-
-
-</body>
+</script>
+</head>
 </html>
